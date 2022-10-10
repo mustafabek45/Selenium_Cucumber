@@ -16,15 +16,17 @@ public class AmazonStepDefinition {
     AmazonPage amazonPage = new AmazonPage();
 
     @Given("kullanici amazon sayfasina gider")
-    public void kullaniciAmazonSayfasinaGider() {
+    public void kullaniciAmazonSayfasinaGider() throws InterruptedException {
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
-        Driver.getDriver().findElement(By.xpath("(//*[@class='a-button-input'])[1]")).click();
+        //Driver.getDriver().findElement(By.xpath("(//*[@class='a-button-input'])[1]")).click();
+        Thread.sleep(2000);
     }
 
 
     @And("sayfayi kapatir")
-    public void sayfayiKapatir() {
+    public void sayfayiKapatir() throws InterruptedException {
         Driver.closeDriver();
+        Thread.sleep(2000);
     }
 
 

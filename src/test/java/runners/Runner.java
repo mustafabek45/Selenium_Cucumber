@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-        tags="@All",  //iki tagi ayni anda calistirmak istersek "@gp1 or @gp2" seklinde yapariz
+        tags="@Background",  //iki tagi ayni anda calistirmak istersek "@gp1 or @gp2" seklinde yapariz
         dryRun = false
 )
 
