@@ -1,5 +1,8 @@
+pages/BrcPage.class
+stepDefinitions/HepsiBuradaStepDefinition.class
 utilities/Driver.class
 runners/Runner.class
 utilities/ConfigReader.class
 stepDefinitions/AmazonStepDefinition.class
+stepDefinitions/BlueRenaCar_StepDefinition.class
 pages/AmazonPage.class
